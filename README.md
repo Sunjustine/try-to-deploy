@@ -1,45 +1,64 @@
-usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
-           <command> [<args>]
+# Anime Finder Bot
 
-These are common Git commands used in various situations:
+Anime Finder Bot is a Telegram bot that helps users stay updated with the latest anime news, search for specific anime titles, and download videos directly from Telegram.
 
-start a working area (see also: git help tutorial)
-   clone     Clone a repository into a new directory
-   init      Create an empty Git repository or reinitialize an existing one
+## Features
 
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
-   mv        Move or rename a file, a directory, or a symlink
-   restore   Restore working tree files
-   rm        Remove files from the working tree and from the index
+- **Latest Anime News**: Get updates on the latest anime releases, news, and events.
+- **Anime Search**: Search for specific anime titles by name, genre, or release date.
+- **Download Anime Videos**: Find and download anime videos directly through the bot.
 
-examine the history and state (see also: git help revisions)
-   bisect    Use binary search to find the commit that introduced a bug
-   diff      Show changes between commits, commit and working tree, etc
-   grep      Print lines matching a pattern
-   log       Show commit logs
-   show      Show various types of objects
-   status    Show the working tree status
+## Prerequisites
 
-grow, mark and tweak your common history
-   branch    List, create, or delete branches
-   commit    Record changes to the repository
-   merge     Join two or more development histories together
-   rebase    Reapply commits on top of another base tip
-   reset     Reset current HEAD to the specified state
-   switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
+Before running the bot, make sure you have the following installed:
 
-collaborate (see also: git help workflows)
-   fetch     Download objects and refs from another repository
-   pull      Fetch from and integrate with another repository or a local branch
-   push      Update remote refs along with associated objects
+- Python 3.7 or higher
+- pip (Python package installer)
+- A Telegram account and a bot token from [BotFather](https://core.telegram.org/bots#botfather)
 
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/yourusername/anime-finder-bot.git
+    cd anime-finder-bot
+    ```
+
+2. Install the required Python packages:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Create a `.env` file to store your bot token:
+
+    ```plaintext
+    BOT_TOKEN=your_telegram_bot_token
+    ```
+
+4. Run the bot:
+
+    ```bash
+    python bot.py
+    ```
+
+## Usage
+
+- **/start**: Start interacting with the bot.
+- **/latest**: Get the latest anime news.
+- **/search [anime name]**: Search for a specific anime by name.
+- **/download [anime name]**: Find and download a video of the specified anime.
+
+## Contributing
+
+Contributions are welcome! Please fork this repository, create a new branch, and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out via [Telegram](https://t.me/yourusername).
+
